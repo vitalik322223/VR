@@ -207,7 +207,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1915351190}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: activation, Assembly-CSharp
         m_MethodName: activate
         m_Mode: 1
@@ -727,6 +727,7 @@ GameObject:
   - component: {fileID: 1125580898}
   - component: {fileID: 1125580897}
   - component: {fileID: 1125580896}
+  - component: {fileID: 1125580900}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -812,6 +813,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &1125580900
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125580895}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1748234678
 GameObject:
   m_ObjectHideFlags: 0
@@ -892,7 +909,8 @@ GameObject:
   - component: {fileID: 1915351188}
   - component: {fileID: 1915351187}
   - component: {fileID: 1915351186}
-  - component: {fileID: 1915351190}
+  - component: {fileID: 1915351191}
+  - component: {fileID: 1915351192}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -978,7 +996,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1915351190
+--- !u!54 &1915351191
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1915351185}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &1915351192
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -992,6 +1026,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cube: {fileID: 1915351185}
   a: 1
+  speed: 10
+  t: {fileID: 1969003555}
+  counter: 10
 --- !u!1 &1969003553
 GameObject:
   m_ObjectHideFlags: 0
@@ -1063,7 +1100,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 100
 --- !u!222 &1969003556
 CanvasRenderer:
   m_ObjectHideFlags: 0
